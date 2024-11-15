@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: f3f3f0;
+    font-family: "Bagoss Standard TRIAL";
+}
+
+        .button-3d {
+            background-color: #226922;
+            /* Button color */
+            color: #fff;
+            font-size: 0.8em;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 5px #2fa00a;
+            /* Shadow for 3D effect */
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .button-3d:hover {
+            background-color: #000000;
+            box-shadow: 0 4px #0d9933;
+            /* Darken shadow on hover */
+        }
+
+        .button-3d:active {
+            transform: translateY(4px);
+            /* Button moves down on click */
+            box-shadow: 0 1px #0ea655;
+            /* Reduced shadow to look pressed */
+        }
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.hero{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50% -50%);
+}
+
+.hero h1{
+    font-family: "VTC Carrie";
+    font-size: 3vw;
+    line-height: 90%;
+}
+.transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.transition-row {
+    flex: 1;
+    display: flex;
+}
+
+/* Corrected class selector syntax */
+.transition-row.row-1 .block {
+    transform-origin: top;
+}
+
+.transition-row.row-2 .block {
+    transform-origin: bottom;
+}
+
+.block {
+    flex: 1;
+    background-color: #746df8;
+    transform: scaleY(1);
+    will-change: transform;
+}
+.procedures-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.text-container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.imagea-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagea-container video {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 10px;
+}
